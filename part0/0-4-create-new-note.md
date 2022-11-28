@@ -1,7 +1,7 @@
 ```mermaid
 sequenceDiagram
 Browser->>Server: HTTP POST /exampleapp/new_note (with form data)
-note over Server: Update data on server with new notice
+note over Server: Update data on server with new note
 Server-->>Browser: 302 Ridirect (location:/exampleammp/notes)
 Browser->>Server: HTTP GET /exampleapp/notes
 Server-->>Browser: notes (refetched)
